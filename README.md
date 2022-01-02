@@ -22,4 +22,4 @@ At the time of creation, iOS 15.1 was the latest version
 
 ## Author
 
-* **Bashir Yesufu** - *Initial work* - [PurpleBooth](https://github.com/BashirYesufu)
+* **Bashir Yesufu** - *Initial work* - [Bashir](https://github.com/BashirYesufu)
