@@ -18,6 +18,8 @@ class CalculatorViewController: UIViewController {
     
     var tip = 0.00
     var numberOfPeople = 0
+    var billTotal = 0.0
+    var finalResult = "0.0"
     
     @IBAction func tipChanged(_ sender: UIButton) {
         
@@ -38,6 +40,14 @@ class CalculatorViewController: UIViewController {
         numberOfPeople = Int(sender.value)
     }
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
+        
+        let bill = billTextField.text!
+        if !bill.isEmpty {
+            billTotal = Double(bill)!
+            let result = billTotal * (1 + tip) / Double(numberOfPeople)
+            finalResult = String(format: "%.2f", result)
+        }
+        self.performSegue(withIdentifier: "goToResults", sender: self)
     }
 }
 
