@@ -10,6 +10,11 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    
+    var result = "0.0"
+    var tip = 10
+    var split = 2
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
