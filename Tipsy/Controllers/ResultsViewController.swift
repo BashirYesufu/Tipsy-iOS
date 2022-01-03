@@ -14,8 +14,8 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var result = "0.0"
-    var tip = 10
-    var split = 2
+    var tip = 0
+    var split = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
